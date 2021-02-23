@@ -7,6 +7,11 @@ variable "location" {
   description = "Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created."
   type        = string
 }
+variable "public_network_access_enabled" {
+  description = "Configures public network access to PostgrSQL Server ."
+  type        = bool
+  default = true
+}
 
 variable "server_name" {
   description = "Specifies the name of the PostgreSQL Server. Changing this forces a new resource to be created."
