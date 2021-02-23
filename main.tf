@@ -13,6 +13,8 @@ resource "azurerm_postgresql_server" "server" {
   administrator_login_password = var.administrator_password
   version                      = var.server_version
   ssl_enforcement_enabled      = var.ssl_enforcement_enabled
+  public_network_access_enabled     = var.public_network_access_enabled
+  
 
   tags = var.tags
 }
